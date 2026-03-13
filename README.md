@@ -1,16 +1,60 @@
-## Hi there 👋
+# Hi, I'm Thiago Langone 👋
 
-<!--
-**JimmyAlter/JimmyAlter** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Full Stack Developer & IT Support Specialist from Argentina 🇦🇷
 
-Here are some ideas to get you started:
+I work with infrastructure, automation and web development.  
+My focus is building tools that improve monitoring, reliability and system management.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 💻 Tech Stack
+
+### Backend
+- Node.js
+- TypeScript
+- PostgreSQL
+- REST APIs
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- React (learning)
+
+### Infrastructure
+- Linux
+- Windows Server
+- Networking
+- Prometheus
+- Grafana
+- OpenVPN
+
+### Automation
+- PowerShell
+- Bash
+- Infrastructure scripts
+
+---
+
+## 🚀 What I Work On
+
+- Infrastructure monitoring tools
+- Automation scripts for IT environments
+- Web dashboards for system monitoring
+- Backend services and APIs
+
+---
+
+## 🌍 Open to Opportunities
+
+- Remote Full Stack Developer roles
+- Junior DevOps roles
+- Infrastructure / Monitoring engineering
+- Backend development
+
+---
+
+## 📫 Contact
+
+Email: thiagovian029@gmail.com  
+Location: Buenos Aires, Argentina
