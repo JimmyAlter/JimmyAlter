@@ -19,7 +19,7 @@ My focus is building tools that improve monitoring, reliability and system manag
 - HTML
 - CSS
 - JavaScript
-- React (learning)
+- React
 
 ### Infrastructure
 - Linux
@@ -56,5 +56,5 @@ My focus is building tools that improve monitoring, reliability and system manag
 
 ## 📫 Contact
 
-Email: thiagovian029@gmail.com  
+Email: thiagoivan029@gmail.com  
 Location: Buenos Aires, Argentina
