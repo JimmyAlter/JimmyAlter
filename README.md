@@ -1,79 +1,60 @@
-# Hi, I'm Thiago Langone 👋
+# Thiago Langone
 
-Full Stack Developer & IT Support Specialist from Argentina 🇦🇷
+**IT Infrastructure & Automation Engineer** — Buenos Aires, Argentina 🇦🇷
 
-I work with infrastructure, automation and web development.  
-My focus is building secure, reliable, and interactive tools that improve monitoring, operations, and system management.
+I look after the infrastructure of a six-company automotive dealer group: 30+ branch offices, 500+ Windows endpoints, six independent Active Directory domains. I don't only operate that environment — I build the tooling that runs it.
 
----
-
-## 🚀 Featured Projects & Interactive Demos
-
-Here are some of my projects deployed with fully interactive browser-based mock data simulators on Vercel:
-
-### 📊 [AssetDesk — IT Asset Management & Service Desk](https://github.com/JimmyAlter/AssetDesk)
-*A lightweight IT asset management workspace with device inventory, ticketing, and user directories.*
-* **Tech Stack:** React 19, Vite 8, CSS, LocalStorage Database Mock
-* **Key Features:** Full mock authentication, ticketing submission, and real-time asset tracking. Runs completely client-side.
-* **Live Demo:** [https://assetdesk-demo.vercel.app](https://assetdesk-demo.vercel.app)
-
-### 🛒 [CommerceSuite — Enterprise Procurement Platform](https://github.com/JimmyAlter/CommerceSuite)
-*An administrative B2B procurement platform with inventory tracking and status auditing.*
-* **Tech Stack:** React, Vite, CSS, Client-side Order Transactions Simulator
-* **Key Features:** Multi-role access (buyer and admin), shopping cart flow, checkout validation, and real-time inventory deduction.
-* **Live Demo:** [https://commercesuite-demo.vercel.app](https://commercesuite-demo.vercel.app)
-
-### 🔐 [Helper — Offline Cryptographic Token Generator](https://github.com/JimmyAlter/helper)
-*A secure Progressive Web App (PWA) designed for field technicians to sign RSA tokens in remote areas without internet.*
-* **Tech Stack:** HTML5, CSS3, Service Workers, Web Crypto API, Local Session Blockers
-* **Key Features:** Offline support, SHA-256 password hashing, native DOM XSS sanitization, and local brute-force protection (lockout).
-* **Live Demo:** [https://helper-ten-pi.vercel.app](https://helper-ten-pi.vercel.app)
-
-### 📦 [Mi Inventario — Reactive IT Stock Manager](https://github.com/JimmyAlter/mi-inventario)
-*A clean IT stock manager utilizing React state synchronization and receipt formatting.*
-* **Tech Stack:** React, Vite, CSS
-* **Key Features:** React 19 modular rendering, print sanitization, and responsive tables.
-* **Live Demo:** [https://mi-inventario-nine.vercel.app](https://mi-inventario-nine.vercel.app)
+Most of my day is Windows, Active Directory, networking and PowerShell. The interesting part is what sits on top: an in-house RMM, internal MCP servers over PostgreSQL and SQL Server, and an LLM agent gateway where every security-critical path runs as deterministic code instead of model output.
 
 ---
 
-## 💻 Tech Stack
+## What I work on
 
-### Backend
-- Node.js
-- TypeScript
-- PostgreSQL
-- REST APIs
-- SQLite / WAL mode
+**In-house RMM** — PowerShell agent running as SYSTEM on every workstation, PostgreSQL back end, Node/Express API, React dashboard. Hardware and software inventory, antivirus and disk alerts, online/offline state, remote command execution. 500+ endpoints across six companies.
 
-### Frontend
-- HTML / CSS / Vanilla JavaScript
-- React (React 19, React Hooks, modular UI design)
-- TailwindCSS
-- Service Workers & PWAs
-- Web Crypto API
+**Agent platform** — an operations gateway on an LLM agent runtime: one orchestrator delegating to four isolated specialist agents, each with its own workspace and an explicit tool deny-list. Structured queries moved from 60–150 s of model inference to under 2 s by intercepting intent in code before the model ever sees the message.
 
-### Infrastructure & Operations
-- Windows Server & Linux Administration
-- Networking & Infrastructure Audits
-- Prometheus & Grafana Monitoring
-- OpenVPN & Remote Support
-- Scripting & Automation (PowerShell, Bash)
+**MCP servers** — five of them, exposing PostgreSQL and SQL Server to agents through fixed parameterized queries only. No free-form SQL reachable by the model, password columns excluded by construction, table allowlist validated in code rather than stated in a prompt.
+
+**Provisioning tooling** — Active Directory and Google Workspace account operations (Express, ldapjs, Google Admin SDK), with confirmation required before anything writes.
 
 ---
 
-## 🌍 Open to Opportunities
+## Public projects
 
-- Full Stack Developer roles
-- Junior DevOps / SRE roles
-- Infrastructure / Monitoring engineering
-- IT Support & Automation Specialist
+| Project | What it is | Stack |
+|---|---|---|
+| [SystemMonitor](https://github.com/JimmyAlter/remote-monitoring-dashboard) | RMM console: inventory, metrics, remote commands, file and task management | React · TypeScript · Node/Express · PostgreSQL |
+| [AssetDesk](https://github.com/JimmyAlter/AssetDesk) | IT service desk and asset inventory — tickets, device health, people directory | React · Vite · Node/Express · SQLite |
+| [CommerceSuite](https://github.com/JimmyAlter/CommerceSuite) | B2B procurement platform with inventory tracking and status auditing | React · Vite · Node/Express |
+| [Portfolio](https://github.com/JimmyAlter/thiagolangone) | Personal site | React · Vite · TailwindCSS |
 
 ---
 
-## 📫 Contact
+## Tech
 
-* **Portfolio:** [https://thiagolangone.vercel.app](https://thiagolangone.vercel.app)
-* **Email:** [thiagoivan029@gmail.com](mailto:thiagoivan029@gmail.com)  
-* **Location:** Buenos Aires, Argentina
+**Infrastructure** Windows Server · Active Directory (LDAP, OUs, GPO) · DNS · DHCP · TCP/IP · multi-site VPN · MikroTik · Linux (Ubuntu, Debian)
 
+**Automation** PowerShell · Python · Bash · Node.js · Windows Task Scheduler
+
+**Development** Node.js/Express · React · Next.js · TypeScript · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
+
+**AI engineering** Multi-agent orchestration · per-agent tool policies · MCP server development · deterministic pre-inference interception · Ollama · Gemini API
+
+**Operations** PDQ Inventory · Kaspersky Endpoint · Zammad · OTRS · Google Workspace Admin SDK and GAM
+
+*Worked with, not claiming depth:* Prometheus · Grafana · OpenVPN · Hyper-V
+
+---
+
+## How I work
+
+Read-only by default. Explicit confirmation before anything destructive. Access rules enforced in code, not written in a prompt and hoped for. Every system documented well enough that the next person doesn't have to rediscover it — including the parts that are broken and why.
+
+---
+
+## Open to
+
+Remote roles in IT automation and infrastructure engineering, applied AI / agent engineering, or platform and internal-tooling work. Based in UTC−3, overlapping a full working day with US Eastern and Central hours.
+
+📫 [thiagoivan029@gmail.com](mailto:thiagoivan029@gmail.com) · [Portfolio](https://thiagolangone.vercel.app) · [LinkedIn](https://www.linkedin.com/in/thiago-langone-365825229/)
