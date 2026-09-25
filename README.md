@@ -14,9 +14,9 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 
 **Agent platform** — an operations gateway on an LLM agent runtime: one orchestrator delegating to four isolated specialist agents, each with its own workspace and an explicit tool deny-list. Structured queries moved from 60–150 s of model inference to under 2 s by intercepting intent in code before the model ever sees the message.
 
-**MCP servers** — five of them, exposing PostgreSQL and SQL Server to agents through fixed parameterized queries only. No free-form SQL reachable by the model, password columns excluded by construction, table allowlist validated in code rather than stated in a prompt.
+**MCP servers** — five of them, exposing PostgreSQL and SQL Server to agents through fixed parameterized queries only. No free-form SQL reachable by the model, password columns excluded by construction, table allowlist validated in code rather than stated in a prompt. The pattern, rebuilt from scratch with its tests, is public: [guarded-sql-mcp](https://github.com/JimmyAlter/guarded-sql-mcp).
 
-**Provisioning tooling** — Active Directory and Google Workspace account operations (Express, ldapjs, Google Admin SDK), with confirmation required before anything writes.
+**Provisioning tooling** — Active Directory and Google Workspace account operations (Express, ldapjs, Google Admin SDK), with confirmation required before anything writes. A generalized PowerShell version of the AD side is public: [ad-lifecycle](https://github.com/JimmyAlter/ad-lifecycle).
 
 ---
 
@@ -24,26 +24,28 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 
 | Project | What it is | Stack |
 |---|---|---|
-| [SystemMonitor](https://github.com/JimmyAlter/remote-monitoring-dashboard) | RMM console: inventory, metrics, remote commands, file and task management | React · TypeScript · Node/Express · PostgreSQL |
-| [AssetDesk](https://github.com/JimmyAlter/AssetDesk) | IT service desk and asset inventory — tickets, device health, people directory | React · Vite · Node/Express · SQLite |
-| [CommerceSuite](https://github.com/JimmyAlter/CommerceSuite) | B2B procurement platform with inventory tracking and status auditing | React · Vite · Node/Express |
+| [SystemMonitor](https://github.com/JimmyAlter/remote-monitoring-dashboard) | RMM console and agents: inventory, metrics, remote execution with every command audited against its operator | React · TypeScript · Node/Express · PostgreSQL · PowerShell |
+| [guarded-sql-mcp](https://github.com/JimmyAlter/guarded-sql-mcp) | MCP server exposing PostgreSQL to LLM agents through a fixed catalog of read-only, parameterized queries | TypeScript · MCP SDK · PostgreSQL |
+| [ad-lifecycle](https://github.com/JimmyAlter/ad-lifecycle) | PowerShell module for AD joiner / mover / leaver operations, `-WhatIf` on every write, Pester-tested | PowerShell · Pester |
+| [AssetDesk](https://github.com/JimmyAlter/AssetDesk) | Small IT service desk and asset inventory: tickets, asset health, people directory | React · Vite · Node/Express · SQLite |
+| [CommerceSuite](https://github.com/JimmyAlter/CommerceSuite) | Procurement storefront with server-side totals, stock and role checks | React · Vite · Node/Express · SQLite |
 | [Portfolio](https://github.com/JimmyAlter/thiagolangone) | Personal site | React · Vite · TailwindCSS |
 
 ---
 
 ## Tech
 
-**Infrastructure** Windows Server · Active Directory (LDAP, OUs, GPO) · DNS · DHCP · TCP/IP · multi-site VPN · MikroTik · Linux (Ubuntu, Debian)
+**Infrastructure** Windows Server · Active Directory (LDAP, OUs, GPO) · DNS · DHCP · TCP/IP · multi-site VPN · Linux (Ubuntu, Debian)
 
 **Automation** PowerShell · Python · Bash · Node.js · Windows Task Scheduler
 
-**Development** Node.js/Express · React · Next.js · TypeScript · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
+**Development** Node.js/Express · React · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
 
 **AI engineering** Multi-agent orchestration · per-agent tool policies · MCP server development · deterministic pre-inference interception · Ollama · Gemini API
 
 **Operations** PDQ Inventory · Kaspersky Endpoint · Zammad · OTRS · Google Workspace Admin SDK and GAM
 
-*Worked with, not claiming depth:* Prometheus · Grafana · OpenVPN · Hyper-V
+*Worked with, not claiming depth:* TypeScript · Next.js · Docker · MikroTik · FortiGate · Hyper-V · Prometheus · Grafana · OpenVPN
 
 ---
 
