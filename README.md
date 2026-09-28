@@ -24,7 +24,7 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 
 | Project | What it is | Stack |
 |---|---|---|
-| [SystemMonitor](https://github.com/JimmyAlter/remote-monitoring-dashboard) | RMM console and agents: inventory, metrics, remote execution with every command audited against its operator | React · TypeScript · Node/Express · PostgreSQL · PowerShell |
+| [SystemMonitor](https://github.com/JimmyAlter/systemmonitor) | RMM console and agents: inventory, metrics, remote execution with every command audited against its operator | React · TypeScript · Node/Express · PostgreSQL · PowerShell |
 | [guarded-sql-mcp](https://github.com/JimmyAlter/guarded-sql-mcp) | MCP server exposing PostgreSQL to LLM agents through a fixed catalog of read-only, parameterized queries | TypeScript · MCP SDK · PostgreSQL |
 | [ad-lifecycle](https://github.com/JimmyAlter/ad-lifecycle) | PowerShell module for AD joiner / mover / leaver operations, `-WhatIf` on every write, Pester-tested | PowerShell · Pester |
 | [AssetDesk](https://github.com/JimmyAlter/AssetDesk) | Small IT service desk and asset inventory: tickets, asset health, people directory | React · Vite · Node/Express · SQLite |
