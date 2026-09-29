@@ -2,7 +2,7 @@
 
 **IT Infrastructure & Automation Engineer** — Buenos Aires, Argentina 🇦🇷
 
-I look after the infrastructure of a six-company automotive dealer group: 30+ branch offices, 500+ Windows endpoints, six independent Active Directory domains. I don't only operate that environment — I build the tooling that runs it.
+Since July 2026 I have been on the IT team of a six-company automotive dealer group: 30+ branch offices, 500+ Windows endpoints, six independent Active Directory domains. Beyond operating that environment, I build tooling for it.
 
 Most of my day is Windows, Active Directory, networking and PowerShell. The interesting part is what sits on top: an in-house RMM, internal MCP servers over PostgreSQL and SQL Server, and an LLM agent gateway where every security-critical path runs as deterministic code instead of model output.
 
@@ -16,7 +16,7 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 
 **MCP servers** — five of them, exposing PostgreSQL and SQL Server to agents through fixed parameterized queries only. No free-form SQL reachable by the model, password columns excluded by construction, table allowlist validated in code rather than stated in a prompt. The pattern, rebuilt from scratch with its tests, is public: [guarded-sql-mcp](https://github.com/JimmyAlter/guarded-sql-mcp).
 
-**Provisioning tooling** — Active Directory and Google Workspace account operations (Express, ldapjs, Google Admin SDK), with confirmation required before anything writes. A generalized PowerShell version of the AD side is public: [ad-lifecycle](https://github.com/JimmyAlter/ad-lifecycle).
+**Provisioning tooling** — Active Directory and Google Workspace account operations (Express, ldapjs, Google Admin SDK), with confirmation required before anything writes. A PowerShell take on the AD side, written from scratch for the public repo, is here: [ad-lifecycle](https://github.com/JimmyAlter/ad-lifecycle).
 
 ---
 
@@ -27,9 +27,9 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 | [SystemMonitor](https://github.com/JimmyAlter/systemmonitor) | RMM console and agents: inventory, metrics, remote execution with every command audited against its operator | React · TypeScript · Node/Express · PostgreSQL · PowerShell |
 | [guarded-sql-mcp](https://github.com/JimmyAlter/guarded-sql-mcp) | MCP server exposing PostgreSQL to LLM agents through a fixed catalog of read-only, parameterized queries | TypeScript · MCP SDK · PostgreSQL |
 | [ad-lifecycle](https://github.com/JimmyAlter/ad-lifecycle) | PowerShell module for AD joiner / mover / leaver operations, `-WhatIf` on every write, Pester-tested | PowerShell · Pester |
-| [AssetDesk](https://github.com/JimmyAlter/AssetDesk) | Small IT service desk and asset inventory: tickets, asset health, people directory | React · Vite · Node/Express · SQLite |
-| [CommerceSuite](https://github.com/JimmyAlter/CommerceSuite) | Procurement storefront with server-side totals, stock and role checks | React · Vite · Node/Express · SQLite |
-| [Portfolio](https://github.com/JimmyAlter/thiagolangone) | Personal site | React · Vite · TailwindCSS |
+| [AssetDesk](https://github.com/JimmyAlter/AssetDesk) | IT service desk and asset inventory with server-enforced roles and a ticket lifecycle · [live demo](https://assetdesk-demo.vercel.app) | React · Vite · Node/Express · SQLite |
+| [CommerceSuite](https://github.com/JimmyAlter/CommerceSuite) | Procurement storefront: server-side totals and stock, order state machine, role-gated admin · [live demo](https://commercesuite-demo.vercel.app) | React · Vite · Node/Express · SQLite |
+| [Portfolio](https://github.com/JimmyAlter/thiagolangone) | Personal site · [live](https://thiagolangone.vercel.app) | React · Vite · TailwindCSS |
 
 ---
 
@@ -39,13 +39,13 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 
 **Automation** PowerShell · Python · Bash · Node.js · Windows Task Scheduler
 
-**Development** Node.js/Express · React · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
+**Development** TypeScript · Node.js/Express · React · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
 
 **AI engineering** Multi-agent orchestration · per-agent tool policies · MCP server development · deterministic pre-inference interception · Ollama · Gemini API
 
 **Operations** PDQ Inventory · Kaspersky Endpoint · Zammad · OTRS · Google Workspace Admin SDK and GAM
 
-*Worked with, not claiming depth:* TypeScript · Next.js · Docker · MikroTik · FortiGate · Hyper-V · Prometheus · Grafana · OpenVPN
+*Worked with, not claiming depth:* Next.js · Docker · MikroTik · FortiGate · Hyper-V · Prometheus · Grafana · OpenVPN
 
 ---
 
