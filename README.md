@@ -39,13 +39,13 @@ Most of my day is Windows, Active Directory, networking and PowerShell. The inte
 
 **Automation** PowerShell · Python · Bash · Node.js · Windows Task Scheduler
 
-**Development** TypeScript · Node.js/Express · React · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
+**Development** TypeScript · Node.js/Express · React · Next.js · TailwindCSS · REST APIs · PostgreSQL · SQL Server · SQLite · Git
 
 **AI engineering** Multi-agent orchestration · per-agent tool policies · MCP server development · deterministic pre-inference interception · Ollama · Gemini API
 
 **Operations** PDQ Inventory · Kaspersky Endpoint · Zammad · OTRS · Google Workspace Admin SDK and GAM
 
-*Worked with, not claiming depth:* Next.js · Docker · MikroTik · FortiGate · Hyper-V · Prometheus · Grafana · OpenVPN
+*Worked with, not claiming depth:* Docker · MikroTik · FortiGate · Hyper-V · Prometheus · Grafana · OpenVPN
 
 ---
 
